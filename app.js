@@ -1,5 +1,6 @@
 const morgan = require('morgan');
 const express = require('express');
+const coursesRouter = require('./routes/courseRoutes');
 
 const app = express();
 
@@ -7,6 +8,9 @@ const app = express();
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+
+// MOUNT ROUTERS
+app.use('/api/v1/courses', coursesRouter);
 app.get('/welcome', (req, res, next) => {
   res.status(200).json({
     status: 'Success',
