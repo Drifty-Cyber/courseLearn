@@ -1,10 +1,17 @@
 const express = require('express');
-const { sayWelcome, createCourse } = require('../controllers/courseController');
+const {
+  sayWelcome,
+  createCourse,
+  getAllCourses,
+  getCourse,
+  updateCourse,
+  deleteCourse,
+} = require('../controllers/courseController');
 
 const router = express.Router();
 
-router.get('/', sayWelcome);
+router.route('/').post(createCourse).get(getAllCourses);
 
-router.route('/').post(createCourse);
+router.route('/:id').get(getCourse).patch(updateCourse).delete(deleteCourse);
 
 module.exports = router;
