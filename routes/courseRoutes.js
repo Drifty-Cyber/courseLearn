@@ -1,6 +1,5 @@
 const express = require('express');
 const {
-  sayWelcome,
   createCourse,
   getAllCourses,
   getCourse,
