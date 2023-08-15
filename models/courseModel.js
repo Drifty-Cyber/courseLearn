@@ -8,4 +8,11 @@ const courseSchema = new mongoose.Schema({
     unique: true,
   },
   slug: String,
+  price: {
+    type: Number,
+    required: [true, 'A course must have a price'],
+  },
 });
+
+const Course = mongoose.model('Course', courseSchema);
+module.exports = Course;

@@ -9,13 +9,10 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+// PARSE BODY DATA
+app.use(express.json());
+
 // MOUNT ROUTERS
 app.use('/api/v1/courses', coursesRouter);
-app.get('/welcome', (req, res, next) => {
-  res.status(200).json({
-    status: 'Success',
-    message: 'Welcome',
-  });
-});
 
 module.exports = app;
