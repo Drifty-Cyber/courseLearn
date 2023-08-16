@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // PARSE BODY DATA
-app.use(express.json());
+app.use(express.json({ limit: '10kb' }));
 
 // MOUNT ROUTERS
 app.use('/api/v1/courses', coursesRouter);
