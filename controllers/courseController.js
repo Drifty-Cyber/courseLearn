@@ -17,13 +17,13 @@ exports.createCourse = async (req, res, _next) => {
 exports.getAllCourses = async (req, res, _next) => {
   console.log(req.query);
 
-  const features = new APIFeatures(Course.find(), req.query)
+  const courseQuery = new APIFeatures(Course.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
 
-  const courses = await features.query;
+  const courses = await courseQuery.query;
   //   const courses = await Course.find();
 
   res.status(200).json({
