@@ -14,6 +14,7 @@ exports.createCourse = async (req, res, _next) => {
 
 // Get All Courses
 exports.getAllCourses = async (req, res, _next) => {
+  console.log(req.query);
   const courses = await Course.find();
 
   res.status(200).json({
