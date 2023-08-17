@@ -1,4 +1,5 @@
 const Course = require('../models/courseModel');
+const APIFeatures = require('../utils/apiFeatures');
 
 // Create Course
 exports.createCourse = async (req, res, _next) => {
@@ -15,7 +16,15 @@ exports.createCourse = async (req, res, _next) => {
 // Get All Courses
 exports.getAllCourses = async (req, res, _next) => {
   console.log(req.query);
-  const courses = await Course.find();
+
+  const features = new APIFeatures(Course.find(), req.query)
+    .filter()
+    .sort()
+    .limitFields()
+    .paginate();
+
+  const courses = await features.query;
+  //   const courses = await Course.find();
 
   res.status(200).json({
     status: 'success',
