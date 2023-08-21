@@ -1,57 +1,108 @@
 [
   {
-    "startLocation": {
-      "description": "Miami, USA",
-      "type": "Point",
-      "coordinates": [-80.185942, 25.774772],
-      "address": "301 Biscayne Blvd, Miami, FL 33132, USA"
-    },
+    "courseTitle": "Introduction to Computer Science",
+    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
+    "leadInstructor": "Dr. Jane Doe",
+    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "medium",
+    "price": 840,
+    "prerequisites": ["Basic Mathematics", "English Language"],
+    "learningObjectives": [
+      "Be able to write simple programs in Python",
+      "Understand the basics of data structures and algorithms",
+      "Solve problems using computational thinking"
+    ],
+    "images": "class-image.jpg",
     "ratingsAverage": 4.8,
     "ratingsQuantity": 6,
-    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
-    "startDates": [
-      "2021-06-19T09:00:00.000Z",
-      "2021-07-20T09:00:00.000Z",
-      "2021-08-18T09:00:00.000Z"
-    ],
-    "_id": "5c88fa8cf4afda39709c2955",
-    "name": "The Sea Explorer",
-    "duration": 7,
-    "maxGroupSize": 15,
-    "difficulty": "medium",
-    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a1f4e2f8fb814b56fa185"],
-    "price": 497,
-    "summary": "Exploring the jaw-dropping US east coast by foot and by boat",
-    "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "imageCover": "tour-2-cover.jpg",
-    "locations": [
+    "enrolledStudents": 22,
+    "courseDuration": "4hrs 22minutes",
+    "courseLength": ["04:22:00"],
+    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "assignments": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "description": "Lummus Park Beach",
-        "type": "Point",
-        "coordinates": [-80.128473, 25.781842],
-        "day": 1
+        "assignmentTitle": "Write a program to print 'Hello, world!'",
+        "dueDate": "2023-09-01"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2958",
-        "description": "Islamorada",
-        "type": "Point",
-        "coordinates": [-80.647885, 24.909047],
-        "day": 2
-      },
-      {
-        "_id": "5c88fa8cf4afda39709c2957",
-        "description": "Sombrero Beach",
-        "type": "Point",
-        "coordinates": [-81.0784, 24.707496],
-        "day": 3
-      },
-      {
-        "_id": "5c88fa8cf4afda39709c2956",
-        "description": "West Key",
-        "type": "Point",
-        "coordinates": [-81.768719, 24.552242],
-        "day": 5
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Solve the following maze using recursion",
+        "dueDate": "2023-09-15"
       }
-    ]
-  },
+    ],
+    "assessments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Midterm Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-09-10"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Final Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-10-15"
+      }
+    ],
+    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Programming"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Data Structures"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Algorithms"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Data Types",
+        "content": "This lesson introduces variables and data types in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Conditional Statements",
+        "content": "This lesson discusses conditional statements in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Tutorial",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Data Structures Tutorial",
+        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 90
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 80
+      }
+    ],
+    "progress": {
+      "section1": 50,
+      "section2": 75,
+      "section3": 100
+    },
+    "analytics": {
+      "studentsEnrolled": 100,
+      "assignmentsSubmitted": 50,
+      "gradesAwarded": 25
+    }
+  }
+]
