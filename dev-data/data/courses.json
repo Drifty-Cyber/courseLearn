@@ -1,5 +1,6 @@
 [
   {
+    "courseId": "CSCI101",
     "courseTitle": "Introduction to Computer Science",
     "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
     "leadInstructor": "Dr. Jane Doe",
@@ -12,6 +13,11 @@
       "Understand the basics of data structures and algorithms",
       "Solve problems using computational thinking"
     ],
+    "schedule": {
+      "day": "Monday",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "Room 203"
+    },
     "images": "class-image.jpg",
     "ratingsAverage": 4.8,
     "ratingsQuantity": 6,
