@@ -3,9 +3,10 @@ const express = require('express');
 const coursesRouter = require('./routes/courseRoutes');
 const AppError = require('./utils/appError');
 
+// Create Express app
 const app = express();
 
-// SETUP MORGAN
+// SETUP MORGAN - Dev Environment
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
@@ -21,4 +22,5 @@ app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
+// Export App
 module.exports = app;
