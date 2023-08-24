@@ -28,3 +28,14 @@ const courses = JSON.parse(
 );
 
 // IMPORT THE DATA
+const importData = async (req, res, next) => {
+  try {
+    await Course.create(courses);
+    console.log('Data successfully loaded');
+  } catch (err) {
+    console.log(err);
+  }
+  process.exit();
+};
+
+// DELETE DATA
