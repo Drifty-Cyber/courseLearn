@@ -26,3 +26,5 @@ mongoose
 const courses = JSON.parse(
   fs.readFileSync(`${__dirname}/courses.json`, 'utf-8')
 );
+
+// IMPORT THE DATA
