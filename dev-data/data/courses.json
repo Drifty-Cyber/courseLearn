@@ -110,5 +110,457 @@
       "assignmentsSubmitted": 50,
       "gradesAwarded": 25
     }
+  },
+  {
+    "courseId": "CSCI102",
+    "courseTitle": "Introduction to Data Analysis",
+    "courseDescription": "This course provides a foundation in the fundamentals of Data Analysis, including Excel, PowerBi, and SPSS.",
+    "leadInstructor": "Dr. Jane Doe",
+    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "hard",
+    "price": 840,
+    "prerequisites": [
+      "Basic Mathematics",
+      "English Language",
+      "Microsoft PowerPoint"
+    ],
+    "learningObjectives": [
+      "Be able to write simple programs in Python",
+      "Understand the basics of data structures and algorithms",
+      "Solve problems using Data Analysis"
+    ],
+    "schedule": {
+      "day": "Tuesday",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "Room 204"
+    },
+    "images": "class-image.jpg",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 9,
+    "enrolledStudents": 32,
+    "courseDuration": "6hrs 22minutes",
+    "courseLength": ["06:22:00"],
+    "syllabus": "https://www.example.com/syllabus/data-analysis-101",
+    "assignments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Write a program to print 'Hello, world!'",
+        "dueDate": "2023-09-01"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Solve the following maze using recursion",
+        "dueDate": "2023-09-15"
+      }
+    ],
+    "assessments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Midterm Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-09-10"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Final Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-10-15"
+      }
+    ],
+    "topics": ["Programming", "Data Analysis", "SQL"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Programming"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Data Structures"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Algorithms"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Data Types",
+        "content": "This lesson introduces variables and data types in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Conditional Statements",
+        "content": "This lesson discusses conditional statements in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Tutorial",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Data Structures Tutorial",
+        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 90
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 80
+      }
+    ],
+    "progress": {
+      "section1": 50,
+      "section2": 75,
+      "section3": 100
+    },
+    "analytics": {
+      "studentsEnrolled": 100,
+      "assignmentsSubmitted": 50,
+      "gradesAwarded": 25
+    }
+  },
+  {
+    "courseId": "CSCI101",
+    "courseTitle": "Introduction to Computer Science",
+    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
+    "leadInstructor": "Dr. Jane Doe",
+    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "medium",
+    "price": 840,
+    "prerequisites": ["Basic Mathematics", "English Language"],
+    "learningObjectives": [
+      "Be able to write simple programs in Python",
+      "Understand the basics of data structures and algorithms",
+      "Solve problems using computational thinking"
+    ],
+    "schedule": {
+      "day": "Monday",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "Room 203"
+    },
+    "images": "class-image.jpg",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "enrolledStudents": 22,
+    "courseDuration": "4hrs 22minutes",
+    "courseLength": ["04:22:00"],
+    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "assignments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Write a program to print 'Hello, world!'",
+        "dueDate": "2023-09-01"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Solve the following maze using recursion",
+        "dueDate": "2023-09-15"
+      }
+    ],
+    "assessments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Midterm Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-09-10"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Final Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-10-15"
+      }
+    ],
+    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Programming"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Data Structures"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Algorithms"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Data Types",
+        "content": "This lesson introduces variables and data types in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Conditional Statements",
+        "content": "This lesson discusses conditional statements in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Tutorial",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Data Structures Tutorial",
+        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 90
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 80
+      }
+    ],
+    "progress": {
+      "section1": 50,
+      "section2": 75,
+      "section3": 100
+    },
+    "analytics": {
+      "studentsEnrolled": 100,
+      "assignmentsSubmitted": 50,
+      "gradesAwarded": 25
+    }
+  },
+  {
+    "courseId": "CSCI101",
+    "courseTitle": "Introduction to Computer Science",
+    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
+    "leadInstructor": "Dr. Jane Doe",
+    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "medium",
+    "price": 840,
+    "prerequisites": ["Basic Mathematics", "English Language"],
+    "learningObjectives": [
+      "Be able to write simple programs in Python",
+      "Understand the basics of data structures and algorithms",
+      "Solve problems using computational thinking"
+    ],
+    "schedule": {
+      "day": "Monday",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "Room 203"
+    },
+    "images": "class-image.jpg",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "enrolledStudents": 22,
+    "courseDuration": "4hrs 22minutes",
+    "courseLength": ["04:22:00"],
+    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "assignments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Write a program to print 'Hello, world!'",
+        "dueDate": "2023-09-01"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Solve the following maze using recursion",
+        "dueDate": "2023-09-15"
+      }
+    ],
+    "assessments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Midterm Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-09-10"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Final Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-10-15"
+      }
+    ],
+    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Programming"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Data Structures"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Algorithms"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Data Types",
+        "content": "This lesson introduces variables and data types in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Conditional Statements",
+        "content": "This lesson discusses conditional statements in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Tutorial",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Data Structures Tutorial",
+        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 90
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 80
+      }
+    ],
+    "progress": {
+      "section1": 50,
+      "section2": 75,
+      "section3": 100
+    },
+    "analytics": {
+      "studentsEnrolled": 100,
+      "assignmentsSubmitted": 50,
+      "gradesAwarded": 25
+    }
+  },
+  {
+    "courseId": "CSCI101",
+    "courseTitle": "Introduction to Computer Science",
+    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
+    "leadInstructor": "Dr. Jane Doe",
+    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "medium",
+    "price": 840,
+    "prerequisites": ["Basic Mathematics", "English Language"],
+    "learningObjectives": [
+      "Be able to write simple programs in Python",
+      "Understand the basics of data structures and algorithms",
+      "Solve problems using computational thinking"
+    ],
+    "schedule": {
+      "day": "Monday",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "Room 203"
+    },
+    "images": "class-image.jpg",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "enrolledStudents": 22,
+    "courseDuration": "4hrs 22minutes",
+    "courseLength": ["04:22:00"],
+    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "assignments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Write a program to print 'Hello, world!'",
+        "dueDate": "2023-09-01"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assignmentTitle": "Solve the following maze using recursion",
+        "dueDate": "2023-09-15"
+      }
+    ],
+    "assessments": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Midterm Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-09-10"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "assessmentTitle": "Final Exam",
+        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "date": "2023-10-15"
+      }
+    ],
+    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Programming"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Data Structures"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Algorithms"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Data Types",
+        "content": "This lesson introduces variables and data types in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Conditional Statements",
+        "content": "This lesson discusses conditional statements in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Tutorial",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Data Structures Tutorial",
+        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 90
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 80
+      }
+    ],
+    "progress": {
+      "section1": 50,
+      "section2": 75,
+      "section3": 100
+    },
+    "analytics": {
+      "studentsEnrolled": 100,
+      "assignmentsSubmitted": 50,
+      "gradesAwarded": 25
+    }
   }
 ]

@@ -15,7 +15,7 @@ exports.createCourse = async (req, res, _next) => {
 
 // Get All Courses
 exports.getAllCourses = async (req, res, _next) => {
-  console.log(req.query);
+  // console.log(req.query);
 
   const courseQuery = new APIFeatures(Course.find(), req.query)
     .filter()
