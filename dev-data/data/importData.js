@@ -28,7 +28,7 @@ const courses = JSON.parse(
 );
 
 // IMPORT THE DATA
-const importData = async (req, res, next) => {
+const importData = async () => {
   try {
     await Course.create(courses);
     console.log('Data successfully loaded');
@@ -39,3 +39,12 @@ const importData = async (req, res, next) => {
 };
 
 // DELETE DATA
+const deleteData = async () => {
+  try {
+    await Course.deleteMany();
+    console.log('Data successfully loaded');
+  } catch (err) {
+    console.log(err);
+  }
+  process.exit();
+};
