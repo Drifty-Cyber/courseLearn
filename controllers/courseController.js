@@ -2,7 +2,7 @@ const Course = require('../models/courseModel');
 const APIFeatures = require('../utils/apiFeatures');
 
 // Create Course
-exports.createCourse = async (req, res, _next) => {
+exports.createCourse = async (req, res, next) => {
   const course = await Course.create(req.body);
 
   res.status(201).json({
@@ -14,7 +14,7 @@ exports.createCourse = async (req, res, _next) => {
 };
 
 // Get All Courses
-exports.getAllCourses = async (req, res, _next) => {
+exports.getAllCourses = async (req, res, next) => {
   // console.log(req.query);
 
   const courseQuery = new APIFeatures(Course.find(), req.query)
@@ -68,5 +68,36 @@ exports.deleteCourse = async (req, res, next) => {
   res.status(204).json({
     status: 'success',
     data: null,
+  });
+};
+
+// AGGREGATION PIPELINE FOR COURSES
+const getExpensiveCourses = async (req, res, next) => {
+  const courses = await Course.aggregate([
+    {
+      $match: { price: { $gte: 500 } },
+    },
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      courses,
+    },
+  });
+};
+
+const getCheapCourses = async (req, res, next) => {
+  const courses = await Course.aggregate([
+    {
+      $match: { price: { $lte: 400 } },
+    },
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      courses,
+    },
   });
 };

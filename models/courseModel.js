@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const courseSchema = new mongoose.Schema({
-  courseTitle: {
+  title: {
     type: String,
     required: [true, 'A course must have a title'],
     unique: true,

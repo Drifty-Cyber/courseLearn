@@ -12,14 +12,31 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // PARSE BODY DATA
-app.use(express.json({ limit: '10kb' }));
+app.use(express.json());
+
+//MIDDLEWARE TO TRACK REQUEST TIME
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  next();
+});
 
 // MOUNT ROUTERS
 app.use('/api/v1/courses', coursesRouter);
 
 // UNSPECIFIED ROUTES
 app.all('*', (req, res, next) => {
-  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+  // next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+  next(new Error('Cant find on this server'));
+});
+
+app.use((err, req, res, next) => {
+  err.statusCode = err.statusCode || 500;
+  err.status = err.status || 'error';
+
+  res.status(err.statusCode).json({
+    status: err.status,
+    message: err.message,
+  });
 });
 
 // Export App
