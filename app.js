@@ -25,8 +25,7 @@ app.use('/api/v1/courses', coursesRouter);
 
 // UNSPECIFIED ROUTES
 app.all('*', (req, res, next) => {
-  // next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-  next(new Error('Cant find on this server'));
+  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
 app.use((err, req, res, next) => {
