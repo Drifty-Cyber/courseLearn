@@ -36,5 +36,12 @@ const courseSchema = new mongoose.Schema({
   // assignments
 });
 
+// MIDDLEWARES
+// Create slug on documents
+courseSchema.pre('save', function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
+});
+
 const Course = mongoose.model('Course', courseSchema);
 module.exports = Course;
