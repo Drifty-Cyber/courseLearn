@@ -1,8 +1,9 @@
 const Course = require('../models/courseModel');
 const APIFeatures = require('../utils/apiFeatures');
+const catchAsync = require('../utils/catchAsync');
 
 // Create Course
-exports.createCourse = async (req, res, next) => {
+exports.createCourse = catchAsync(async (req, res, next) => {
   const course = await Course.create(req.body);
 
   res.status(201).json({
@@ -11,10 +12,10 @@ exports.createCourse = async (req, res, next) => {
       course,
     },
   });
-};
+});
 
 // Get All Courses
-exports.getAllCourses = async (req, res, next) => {
+exports.getAllCourses = catchAsync(async (req, res, next) => {
   // console.log(req.query);
 
   const courseQuery = new APIFeatures(Course.find(), req.query)
@@ -25,17 +26,19 @@ exports.getAllCourses = async (req, res, next) => {
 
   const courses = await courseQuery.query;
   //   const courses = await Course.find();
+  const results = courses.length;
 
   res.status(200).json({
     status: 'success',
     data: {
+      results,
       courses,
     },
   });
-};
+});
 
 // Get Course
-exports.getCourse = async (req, res, next) => {
+exports.getCourse = catchAsync(async (req, res, next) => {
   const course = await Course.findById(req.params.id);
 
   res.status(200).json({
@@ -44,10 +47,10 @@ exports.getCourse = async (req, res, next) => {
       course,
     },
   });
-};
+});
 
 // Update Course
-exports.updateCourse = async (req, res, next) => {
+exports.updateCourse = catchAsync(async (req, res, next) => {
   const course = await Course.findByIdAndUpdate(req.params.id, req.body, {
     runValidators: true,
     new: true,
@@ -59,20 +62,20 @@ exports.updateCourse = async (req, res, next) => {
       course,
     },
   });
-};
+});
 
 // Delete Course
-exports.deleteCourse = async (req, res, next) => {
+exports.deleteCourse = catchAsync(async (req, res, next) => {
   const course = await Course.findByIdAndDelete(req.params.id);
 
   res.status(204).json({
     status: 'success',
     data: null,
   });
-};
+});
 
 // AGGREGATION PIPELINE FOR COURSES
-const getExpensiveCourses = async (req, res, next) => {
+const getExpensiveCourses = catchAsync(async (req, res, next) => {
   const courses = await Course.aggregate([
     {
       $match: { price: { $gte: 500 } },
@@ -85,9 +88,9 @@ const getExpensiveCourses = async (req, res, next) => {
       courses,
     },
   });
-};
+});
 
-const getCheapCourses = async (req, res, next) => {
+const getCheapCourses = catchAsync(async (req, res, next) => {
   const courses = await Course.aggregate([
     {
       $match: { price: { $lte: 400 } },
@@ -100,4 +103,4 @@ const getCheapCourses = async (req, res, next) => {
       courses,
     },
   });
-};
+});

@@ -39,7 +39,7 @@ const courseSchema = new mongoose.Schema({
 // MIDDLEWARES
 // Create slug on documents
 courseSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  this.slug = slugify(this.title, { lower: true });
   next();
 });
 
