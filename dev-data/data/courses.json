@@ -228,318 +228,770 @@
     }
   },
   {
-    "courseId": "CSCI101",
-    "courseTitle": "Introduction to Computer Science",
-    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
-    "leadInstructor": "Dr. Jane Doe",
-    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
-    "difficulty": "medium",
-    "price": 840,
-    "prerequisites": ["Basic Mathematics", "English Language"],
+    "courseId": "WEBDEV202",
+    "courseTitle": "Web Development Fundamentals",
+    "courseDescription": "Learn the basics of building interactive websites using HTML, CSS, and JavaScript.",
+    "leadInstructor": "Dr. Mark Johnson",
+    "instructors": ["5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "easy",
+    "price": 550,
+    "prerequisites": ["Basic Computer Skills"],
     "learningObjectives": [
-      "Be able to write simple programs in Python",
-      "Understand the basics of data structures and algorithms",
-      "Solve problems using computational thinking"
+      "Create static web pages using HTML and CSS",
+      "Implement interactivity with JavaScript",
+      "Understand responsive design and cross-browser compatibility"
     ],
     "schedule": {
-      "day": "Monday",
-      "time": "10:00 AM - 12:00 PM",
-      "location": "Room 203"
+      "day": "Tuesday",
+      "time": "1:00 PM - 3:00 PM",
+      "location": "Lab 302"
     },
-    "images": "class-image.jpg",
-    "ratingsAverage": 4.8,
-    "ratingsQuantity": 6,
-    "enrolledStudents": 22,
-    "courseDuration": "4hrs 22minutes",
-    "courseLength": ["04:22:00"],
-    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "images": "web-dev.jpg",
+    "ratingsAverage": 4.2,
+    "ratingsQuantity": 8,
+    "enrolledStudents": 18,
+    "courseDuration": "3hrs",
+    "courseLength": ["03:00:00"],
+    "syllabus": "https://www.example.com/syllabus/web-dev",
     "assignments": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Write a program to print 'Hello, world!'",
-        "dueDate": "2023-09-01"
+        "assignmentTitle": "Create a personal portfolio webpage",
+        "dueDate": "2023-10-08"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Solve the following maze using recursion",
-        "dueDate": "2023-09-15"
+        "_id": "5c88fa8cf4afda39709c2960",
+        "assignmentTitle": "Build an interactive form using JavaScript",
+        "dueDate": "2023-10-22"
       }
     ],
-    "assessments": [
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Midterm Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-09-10"
-      },
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Final Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-10-15"
-      }
-    ],
-    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "topics": ["Web Development", "HTML", "CSS", "JavaScript"],
     "sections": [
       {
         "sectionId": 1,
-        "sectionTitle": "Introduction to Programming"
+        "sectionTitle": "Introduction to Web Development"
       },
       {
         "sectionId": 2,
-        "sectionTitle": "Data Structures"
+        "sectionTitle": "HTML Basics"
       },
       {
         "sectionId": 3,
-        "sectionTitle": "Algorithms"
+        "sectionTitle": "CSS Styling"
       }
     ],
     "lessons": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Variables and Data Types",
-        "content": "This lesson introduces variables and data types in Python."
+        "lessonTitle": "Introduction to HTML",
+        "content": "This lesson introduces the fundamentals of HTML."
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Conditional Statements",
-        "content": "This lesson discusses conditional statements in Python."
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Styling with CSS",
+        "content": "Learn how to style web pages using CSS."
       }
     ],
     "media": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Python Tutorial",
-        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+        "mediaTitle": "HTML Tutorial",
+        "url": "https://www.youtube.com/watch?v=xyz123"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Data Structures Tutorial",
-        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "JavaScript Basics",
+        "url": "https://www.youtube.com/watch?v=abc456"
       }
     ],
     "grades": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "grade": 90
+        "grade": 95
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "grade": 80
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 88
       }
     ],
     "progress": {
-      "section1": 50,
-      "section2": 75,
-      "section3": 100
+      "section1": 100,
+      "section2": 80,
+      "section3": 60
     },
     "analytics": {
-      "studentsEnrolled": 100,
-      "assignmentsSubmitted": 50,
-      "gradesAwarded": 25
+      "studentsEnrolled": 50,
+      "assignmentsSubmitted": 30,
+      "gradesAwarded": 20
     }
   },
   {
-    "courseId": "CSCI101",
-    "courseTitle": "Introduction to Computer Science",
-    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
-    "leadInstructor": "Dr. Jane Doe",
-    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
-    "difficulty": "medium",
-    "price": 840,
-    "prerequisites": ["Basic Mathematics", "English Language"],
+    "courseId": "DATASCI301",
+    "courseTitle": "Introduction to Data Science",
+    "courseDescription": "Discover the foundations of data science, including data analysis, visualization, and machine learning.",
+    "leadInstructor": "Prof. Lisa Anderson",
+    "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
+    "difficulty": "intermediate",
+    "price": 750,
+    "prerequisites": ["Basic Statistics", "Programming Fundamentals"],
     "learningObjectives": [
-      "Be able to write simple programs in Python",
-      "Understand the basics of data structures and algorithms",
-      "Solve problems using computational thinking"
+      "Analyze and manipulate datasets using Python",
+      "Create informative data visualizations",
+      "Understand the basics of machine learning algorithms"
     ],
     "schedule": {
-      "day": "Monday",
-      "time": "10:00 AM - 12:00 PM",
-      "location": "Room 203"
+      "day": "Thursday",
+      "time": "3:00 PM - 5:00 PM",
+      "location": "Lab 201"
     },
-    "images": "class-image.jpg",
-    "ratingsAverage": 4.8,
-    "ratingsQuantity": 6,
-    "enrolledStudents": 22,
-    "courseDuration": "4hrs 22minutes",
-    "courseLength": ["04:22:00"],
-    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "images": "data-science.jpg",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 12,
+    "enrolledStudents": 25,
+    "courseDuration": "4hrs 45minutes",
+    "courseLength": ["04:45:00"],
+    "syllabus": "https://www.example.com/syllabus/data-science",
     "assignments": [
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Write a program to print 'Hello, world!'",
-        "dueDate": "2023-09-01"
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Analyze a real-world dataset",
+        "dueDate": "2023-10-10"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Solve the following maze using recursion",
-        "dueDate": "2023-09-15"
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Create a predictive model using machine learning",
+        "dueDate": "2023-10-31"
       }
     ],
-    "assessments": [
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Midterm Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-09-10"
-      },
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Final Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-10-15"
-      }
-    ],
-    "topics": ["Programming", "Data Structures", "Algorithms"],
+    "topics": ["Data Science", "Data Analysis", "Machine Learning"],
     "sections": [
       {
         "sectionId": 1,
-        "sectionTitle": "Introduction to Programming"
+        "sectionTitle": "Introduction to Data Analysis"
       },
       {
         "sectionId": 2,
-        "sectionTitle": "Data Structures"
+        "sectionTitle": "Data Visualization"
       },
       {
         "sectionId": 3,
-        "sectionTitle": "Algorithms"
+        "sectionTitle": "Machine Learning Basics"
       }
     ],
     "lessons": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Variables and Data Types",
-        "content": "This lesson introduces variables and data types in Python."
+        "lessonTitle": "Data Cleaning and Preprocessing",
+        "content": "Learn how to clean and prepare datasets for analysis."
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Conditional Statements",
-        "content": "This lesson discusses conditional statements in Python."
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Creating Data Visualizations",
+        "content": "Explore techniques to create meaningful data visualizations."
       }
     ],
     "media": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Python Tutorial",
-        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+        "mediaTitle": "Pandas Tutorial",
+        "url": "https://www.youtube.com/watch?v=p1l4Zv_krP0"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Data Structures Tutorial",
-        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "Machine Learning Introduction",
+        "url": "https://www.youtube.com/watch?v=def456"
       }
     ],
     "grades": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "grade": 90
+        "grade": 88
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "grade": 80
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 92
       }
     ],
     "progress": {
-      "section1": 50,
-      "section2": 75,
-      "section3": 100
+      "section1": 90,
+      "section2": 70,
+      "section3": 50
     },
     "analytics": {
-      "studentsEnrolled": 100,
-      "assignmentsSubmitted": 50,
-      "gradesAwarded": 25
+      "studentsEnrolled": 35,
+      "assignmentsSubmitted": 28,
+      "gradesAwarded": 18
     }
   },
   {
-    "courseId": "CSCI101",
-    "courseTitle": "Introduction to Computer Science",
-    "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
-    "leadInstructor": "Dr. Jane Doe",
-    "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
-    "difficulty": "medium",
-    "price": 840,
-    "prerequisites": ["Basic Mathematics", "English Language"],
+    "courseId": "COMPILER401",
+    "courseTitle": "Compiler Construction and Theory",
+    "courseDescription": "Delve into the intricacies of compiler design, parsing techniques, and programming languages.",
+    "leadInstructor": "Prof. David Thompson",
+    "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
+    "difficulty": "advanced",
+    "price": 800,
+    "prerequisites": ["Programming Language Concepts", "Data Structures"],
     "learningObjectives": [
-      "Be able to write simple programs in Python",
-      "Understand the basics of data structures and algorithms",
-      "Solve problems using computational thinking"
+      "Understand compiler architecture and phases",
+      "Implement lexical and syntax analysis",
+      "Design and construct a simple programming language"
     ],
     "schedule": {
-      "day": "Monday",
+      "day": "Tuesday",
       "time": "10:00 AM - 12:00 PM",
-      "location": "Room 203"
+      "location": "Lab 401"
     },
-    "images": "class-image.jpg",
+    "images": "compiler-construction.jpg",
     "ratingsAverage": 4.8,
-    "ratingsQuantity": 6,
-    "enrolledStudents": 22,
-    "courseDuration": "4hrs 22minutes",
-    "courseLength": ["04:22:00"],
-    "syllabus": "https://www.example.com/syllabus/comp-sci-101",
+    "ratingsQuantity": 5,
+    "enrolledStudents": 8,
+    "courseDuration": "4hrs 45minutes",
+    "courseLength": ["04:45:00"],
+    "syllabus": "https://www.example.com/syllabus/compiler-construction",
     "assignments": [
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Write a program to print 'Hello, world!'",
-        "dueDate": "2023-09-01"
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Implement a lexical analyzer for a subset of a programming language",
+        "dueDate": "2023-10-05"
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assignmentTitle": "Solve the following maze using recursion",
-        "dueDate": "2023-09-15"
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Design and implement a simple compiler frontend",
+        "dueDate": "2023-10-20"
       }
     ],
-    "assessments": [
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Midterm Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-09-10"
-      },
-      {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "assessmentTitle": "Final Exam",
-        "assessmentQuestion": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-        "date": "2023-10-15"
-      }
+    "topics": [
+      "Compiler Design",
+      "Parsing Techniques",
+      "Programming Languages"
     ],
-    "topics": ["Programming", "Data Structures", "Algorithms"],
     "sections": [
       {
         "sectionId": 1,
-        "sectionTitle": "Introduction to Programming"
+        "sectionTitle": "Introduction to Compiler Theory"
       },
       {
         "sectionId": 2,
-        "sectionTitle": "Data Structures"
+        "sectionTitle": "Lexical Analysis"
       },
       {
         "sectionId": 3,
-        "sectionTitle": "Algorithms"
+        "sectionTitle": "Syntax Analysis"
       }
     ],
     "lessons": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Variables and Data Types",
-        "content": "This lesson introduces variables and data types in Python."
+        "lessonTitle": "Compiler Architecture",
+        "content": "Learn about the different phases of compiler construction."
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "lessonTitle": "Conditional Statements",
-        "content": "This lesson discusses conditional statements in Python."
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Lexical Analyzers",
+        "content": "Explore lexical analysis and tokenization."
       }
     ],
     "media": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Python Tutorial",
-        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZqw"
+        "mediaTitle": "Compiler Design Overview",
+        "url": "https://www.youtube.com/watch?v=abc789"
       },
       {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "Lexical Analysis Techniques",
+        "url": "https://www.youtube.com/watch?v=def012"
+      }
+    ],
+    "grades": [
+      {
         "_id": "5c88fa8cf4afda39709c2959",
-        "mediaTitle": "Data Structures Tutorial",
-        "url": "https://www.youtube.com/watch?v=u8574s2yRr8"
+        "grade": 95
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 88
+      }
+    ],
+    "progress": {
+      "section1": 75,
+      "section2": 60,
+      "section3": 50
+    },
+    "analytics": {
+      "studentsEnrolled": 10,
+      "assignmentsSubmitted": 7,
+      "gradesAwarded": 5
+    }
+  },
+  {
+    "courseId": "DATACOMM301",
+    "courseTitle": "Data Communication and Networking",
+    "courseDescription": "Explore the principles of data communication and networking, including protocols, transmission, and network architectures.",
+    "leadInstructor": "Dr. Michael Roberts",
+    "instructors": ["5d6b9e73a4cf3a2f87c18a9e", "5e7f1b9cf9a2b6d92e45231a"],
+    "difficulty": "intermediate",
+    "price": 700,
+    "prerequisites": ["Basic Computer Networking"],
+    "learningObjectives": [
+      "Understand networking concepts and protocols",
+      "Design and implement basic networks",
+      "Analyze and troubleshoot network issues"
+    ],
+    "schedule": {
+      "day": "Thursday",
+      "time": "2:00 PM - 4:00 PM",
+      "location": "Lab 302"
+    },
+    "images": "data-communication.jpg",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 6,
+    "enrolledStudents": 12,
+    "courseDuration": "4hrs 15minutes",
+    "courseLength": ["04:15:00"],
+    "syllabus": "https://www.example.com/syllabus/data-communication",
+    "assignments": [
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Design a basic local area network",
+        "dueDate": "2023-09-30"
+      },
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Troubleshoot network connectivity issues",
+        "dueDate": "2023-10-15"
+      }
+    ],
+    "topics": ["Data Communication", "Networking Principles", "Protocols"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Networking"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Network Protocols"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Network Security"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Introduction to Networking Concepts",
+        "content": "Learn about the fundamentals of data communication and networking."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "TCP/IP and OSI Model",
+        "content": "Explore the TCP/IP protocol suite and the OSI model."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Networking Basics",
+        "url": "https://www.youtube.com/watch?v=pqr123"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "TCP/IP Overview",
+        "url": "https://www.youtube.com/watch?v=xyz456"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 88
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 76
+      }
+    ],
+    "progress": {
+      "section1": 80,
+      "section2": 65,
+      "section3": 50
+    },
+    "analytics": {
+      "studentsEnrolled": 18,
+      "assignmentsSubmitted": 14,
+      "gradesAwarded": 10
+    }
+  },
+  {
+    "courseId": "ML202",
+    "courseTitle": "Machine Learning Fundamentals",
+    "courseDescription": "Explore the core concepts of machine learning, including algorithms, model training, and evaluation.",
+    "leadInstructor": "Dr. Sarah Johnson",
+    "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
+    "difficulty": "intermediate",
+    "price": 600,
+    "prerequisites": ["Python Programming", "Basic Statistics"],
+    "learningObjectives": [
+      "Understand machine learning concepts and terminology",
+      "Implement and train machine learning models",
+      "Evaluate model performance and make predictions"
+    ],
+    "schedule": {
+      "day": "Wednesday",
+      "time": "3:00 PM - 5:00 PM",
+      "location": "Lab 301"
+    },
+    "images": "machine-learning.jpg",
+    "ratingsAverage": 4.4,
+    "ratingsQuantity": 7,
+    "enrolledStudents": 15,
+    "courseDuration": "4hrs 30minutes",
+    "courseLength": ["04:30:00"],
+    "syllabus": "https://www.example.com/syllabus/machine-learning",
+    "assignments": [
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Train a classification model on a real dataset",
+        "dueDate": "2023-09-28"
+      },
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Regression analysis using machine learning",
+        "dueDate": "2023-10-12"
+      }
+    ],
+    "topics": ["Machine Learning", "Model Training", "Evaluation"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Machine Learning"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Supervised Learning"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Unsupervised Learning"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Introduction to ML Algorithms",
+        "content": "Explore different types of machine learning algorithms."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Regression and Classification",
+        "content": "Learn about regression and classification techniques."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Introduction to Machine Learning",
+        "url": "https://www.youtube.com/watch?v=xyz123"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "Supervised Learning Overview",
+        "url": "https://www.youtube.com/watch?v=abc456"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 92
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 84
+      }
+    ],
+    "progress": {
+      "section1": 85,
+      "section2": 70,
+      "section3": 60
+    },
+    "analytics": {
+      "studentsEnrolled": 30,
+      "assignmentsSubmitted": 25,
+      "gradesAwarded": 15
+    }
+  },
+  {
+    "courseId": "PYT101",
+    "courseTitle": "Python Programming Basics",
+    "courseDescription": "Learn the fundamentals of Python programming, covering syntax, data types, and basic algorithms.",
+    "leadInstructor": "Prof. John Smith",
+    "instructors": ["5d6b9e73a4cf3a2f87c18a9e"],
+    "difficulty": "beginner",
+    "price": 400,
+    "prerequisites": ["None"],
+    "learningObjectives": [
+      "Understand Python syntax and fundamental data types",
+      "Write simple Python programs",
+      "Develop problem-solving skills through coding"
+    ],
+    "schedule": {
+      "day": "Monday",
+      "time": "2:00 PM - 4:00 PM",
+      "location": "Lab 201"
+    },
+    "images": "python-programming.jpg",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 9,
+    "enrolledStudents": 20,
+    "courseDuration": "3hrs 15minutes",
+    "courseLength": ["03:15:00"],
+    "syllabus": "https://www.example.com/syllabus/python-programming",
+    "assignments": [
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Write a Python program to calculate Fibonacci sequence",
+        "dueDate": "2023-09-25"
+      },
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Implement a basic text-based game in Python",
+        "dueDate": "2023-10-10"
+      }
+    ],
+    "topics": ["Python Programming", "Programming Basics"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to Python"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Basic Syntax"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Data Types"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Variables and Operators",
+        "content": "Learn about variables, operators, and expressions in Python."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Conditional Statements",
+        "content": "Explore conditional statements and decision-making in Python."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Python Basics Tutorial",
+        "url": "https://www.youtube.com/watch?v=abc123"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "Python Loops",
+        "url": "https://www.youtube.com/watch?v=def456"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 85
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 78
+      }
+    ],
+    "progress": {
+      "section1": 95,
+      "section2": 70,
+      "section3": 50
+    },
+    "analytics": {
+      "studentsEnrolled": 40,
+      "assignmentsSubmitted": 30,
+      "gradesAwarded": 20
+    }
+  },
+  {
+    "courseId": "JSWEB202",
+    "courseTitle": "JavaScript Web Development",
+    "courseDescription": "Learn how to build interactive and dynamic websites using JavaScript, HTML, and CSS.",
+    "leadInstructor": "Prof. Emily Williams",
+    "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
+    "difficulty": "intermediate",
+    "price": 550,
+    "prerequisites": ["HTML and CSS Basics", "Basic JavaScript"],
+    "learningObjectives": [
+      "Create interactive web pages using JavaScript",
+      "Manipulate the DOM to update page content",
+      "Implement event handling and form validation"
+    ],
+    "schedule": {
+      "day": "Tuesday",
+      "time": "2:00 PM - 4:00 PM",
+      "location": "Lab 202"
+    },
+    "images": "javascript-web-development.jpg",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 10,
+    "enrolledStudents": 25,
+    "courseDuration": "4hrs 30minutes",
+    "courseLength": ["04:30:00"],
+    "syllabus": "https://www.example.com/syllabus/javascript-web-development",
+    "assignments": [
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Create a simple interactive webpage using JavaScript",
+        "dueDate": "2023-10-05"
+      },
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Build a form with validation using JavaScript",
+        "dueDate": "2023-10-20"
+      }
+    ],
+    "topics": ["JavaScript", "Web Development", "DOM Manipulation"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to JavaScript"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "DOM Manipulation"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Event Handling"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Introduction to JavaScript",
+        "content": "Learn the basics of JavaScript programming."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Manipulating the DOM",
+        "content": "Explore how to manipulate the Document Object Model using JavaScript."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "JavaScript Basics",
+        "url": "https://www.youtube.com/watch?v=abc789"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "DOM Manipulation Techniques",
+        "url": "https://www.youtube.com/watch?v=def012"
+      }
+    ],
+    "grades": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "grade": 88
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 76
+      }
+    ],
+    "progress": {
+      "section1": 70,
+      "section2": 55,
+      "section3": 40
+    },
+    "analytics": {
+      "studentsEnrolled": 30,
+      "assignmentsSubmitted": 20,
+      "gradesAwarded": 15
+    }
+  },
+  {
+    "courseId": "PCUPGRADE101",
+    "courseTitle": "PC Upgrading and Hardware Essentials",
+    "courseDescription": "Gain practical knowledge on upgrading and maintaining computer hardware components.",
+    "leadInstructor": "Dr. Mark Anderson",
+    "instructors": ["5c8a22c62f8fb814b56fa18b"],
+    "difficulty": "beginner",
+    "price": 350,
+    "prerequisites": ["Basic Computer Knowledge"],
+    "learningObjectives": [
+      "Understand PC hardware components and their functions",
+      "Upgrade and replace hardware components",
+      "Troubleshoot common hardware issues"
+    ],
+    "schedule": {
+      "day": "Thursday",
+      "time": "4:00 PM - 6:00 PM",
+      "location": "Lab 102"
+    },
+    "images": "pc-upgrading.jpg",
+    "ratingsAverage": 4.2,
+    "ratingsQuantity": 8,
+    "enrolledStudents": 18,
+    "courseDuration": "3hrs 45minutes",
+    "courseLength": ["03:45:00"],
+    "syllabus": "https://www.example.com/syllabus/pc-upgrading",
+    "assignments": [
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f7",
+        "assignmentTitle": "Demonstrate hardware installation and upgrading",
+        "dueDate": "2023-10-08"
+      },
+      {
+        "_id": "5f92a7f5ac96cd40e86b06f8",
+        "assignmentTitle": "Troubleshoot and diagnose hardware problems",
+        "dueDate": "2023-10-22"
+      }
+    ],
+    "topics": ["PC Hardware", "Hardware Upgrading", "Troubleshooting"],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionTitle": "Introduction to PC Hardware"
+      },
+      {
+        "sectionId": 2,
+        "sectionTitle": "Components and Upgrading"
+      },
+      {
+        "sectionId": 3,
+        "sectionTitle": "Hardware Troubleshooting"
+      }
+    ],
+    "lessons": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "lessonTitle": "Understanding Motherboards",
+        "content": "Learn about the role and components of a motherboard."
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "lessonTitle": "Installing RAM and Storage Devices",
+        "content": "Explore how to install and upgrade RAM and storage components."
+      }
+    ],
+    "media": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "mediaTitle": "Motherboard Overview",
+        "url": "https://www.youtube.com/watch?v=abc789"
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "mediaTitle": "RAM Installation Tutorial",
+        "url": "https://www.youtube.com/watch?v=def012"
       }
     ],
     "grades": [
@@ -548,19 +1000,19 @@
         "grade": 90
       },
       {
-        "_id": "5c88fa8cf4afda39709c2959",
-        "grade": 80
+        "_id": "5c88fa8cf4afda39709c2960",
+        "grade": 82
       }
     ],
     "progress": {
-      "section1": 50,
-      "section2": 75,
-      "section3": 100
+      "section1": 80,
+      "section2": 65,
+      "section3": 55
     },
     "analytics": {
-      "studentsEnrolled": 100,
-      "assignmentsSubmitted": 50,
-      "gradesAwarded": 25
+      "studentsEnrolled": 20,
+      "assignmentsSubmitted": 15,
+      "gradesAwarded": 12
     }
   }
 ]
