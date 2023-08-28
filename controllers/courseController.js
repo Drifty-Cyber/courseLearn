@@ -1,10 +1,17 @@
 const Course = require('../models/courseModel');
 const APIFeatures = require('../utils/apiFeatures');
+const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 
 // Create Course
 exports.createCourse = catchAsync(async (req, res, next) => {
   const course = await Course.create(req.body);
+
+  if (!course) {
+    return next(
+      new AppError('Course could not be created. Please try again later!', 403)
+    );
+  }
 
   res.status(201).json({
     status: 'success',
@@ -28,6 +35,12 @@ exports.getAllCourses = catchAsync(async (req, res, next) => {
   //   const courses = await Course.find();
   const results = courses.length;
 
+  if (!courses) {
+    return next(
+      new AppError('Courses could not be found. Please try again later!', 404)
+    );
+  }
+
   res.status(200).json({
     status: 'success',
     data: {
@@ -40,6 +53,10 @@ exports.getAllCourses = catchAsync(async (req, res, next) => {
 // Get Course
 exports.getCourse = catchAsync(async (req, res, next) => {
   const course = await Course.findById(req.params.id);
+
+  if (!course) {
+    return next(new AppError('No course could be found', 404));
+  }
 
   res.status(200).json({
     status: 'success',
@@ -56,6 +73,10 @@ exports.updateCourse = catchAsync(async (req, res, next) => {
     new: true,
   });
 
+  if (!course) {
+    return next(new AppError('No course could be found.', 404));
+  }
+
   res.status(200).json({
     status: 'success',
     data: {
@@ -67,6 +88,10 @@ exports.updateCourse = catchAsync(async (req, res, next) => {
 // Delete Course
 exports.deleteCourse = catchAsync(async (req, res, next) => {
   const course = await Course.findByIdAndDelete(req.params.id);
+
+  if (!course) {
+    return next(new AppError('No course could be found with that ID', 404));
+  }
 
   res.status(204).json({
     status: 'success',
