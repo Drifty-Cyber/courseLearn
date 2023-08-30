@@ -10,4 +10,12 @@ const assessmentSchema = new mongoose.Schema({
     type: mongoose.Schema.ObjectId,
     ref: 'Course',
   },
+  instructor: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User',
+    required: [true, 'An assessment must have an Instructor(s)'],
+  },
 });
+
+const Assessment = mongoose.model('Assessment', assessmentSchema);
+module.exports = Assessment;

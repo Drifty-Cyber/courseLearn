@@ -33,7 +33,18 @@ const courseSchema = new mongoose.Schema({
   enrolledStudents: Number,
   courseDuration: String,
   courseLength: [Number],
-  // assignments
+  assignments: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: 'Assignment',
+    },
+  ],
+  assesments: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: 'Assessment',
+    },
+  ],
 });
 
 // MIDDLEWARES

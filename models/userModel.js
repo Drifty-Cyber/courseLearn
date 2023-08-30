@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     required: [true, 'A user must provide a name'],
   },
   email: {
-    typr: String,
+    type: String,
     required: [true, 'A user must have an email address'],
     unique: true,
     lowercase: true,
@@ -21,6 +21,20 @@ const userSchema = new mongoose.Schema({
   },
   passwordConfirm: {
     type: String,
+  },
+  photo: {
+    type: String,
+    default: 'default.jpg',
+  },
+  role: {
+    type: String,
+    enum: ['user', 'student', 'instructor', 'admin'],
+    default: 'student',
+  },
+  active: {
+    type: Boolean,
+    default: true,
+    select: false,
   },
 });
 
