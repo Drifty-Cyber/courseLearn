@@ -10,10 +10,23 @@ const sendErrorDev = (err, req, res) => {
     });
   }
 
-  // If Rendered Website becomes available
+  // If Rendered Website becomes available⬇⬇⬇⬇⬇
 };
 
-const sendErrorProd = (err, req, res, next) => {};
+const sendErrorProd = (err, req, res, next) => {
+  if (err.isOperational) {
+    return res.status(err.statusCode).json({
+      status: err.status,
+      message: err.message,
+    });
+  }
+
+  // Programming Error
+  return res.status(err.statusCode).json({
+    status: 'error',
+    message: 'Something went very wrong!',
+  });
+};
 
 module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
