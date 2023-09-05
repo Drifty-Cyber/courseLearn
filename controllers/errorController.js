@@ -7,6 +7,11 @@ const handleDuplicateFields = (err) => {
   return new AppError(message, 400);
 };
 
+const handleCastErrorDB = (err) => {
+  const message = `Invalid ${err.path}: ${err.value}`;
+  return new AppError(message, 400);
+};
+
 const sendErrorDev = (err, req, res) => {
   if (req.originalUrl.startsWith('/api')) {
     return res.status(err.statusCode).json({
@@ -46,6 +51,7 @@ module.exports = (err, req, res, next) => {
     error.message = err.message;
 
     if (err.name === 11000) error = handleDuplicateFields(err);
+    if (err.name === 'CastError') error = handleCastErrorDB(err);
   }
 
   res.status(err.statusCode).json({
