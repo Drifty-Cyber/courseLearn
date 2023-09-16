@@ -1,5 +1,6 @@
 const morgan = require('morgan');
 const express = require('express');
+const xss = require('xss-clean');
 const coursesRouter = require('./routes/courseRoutes');
 const AppError = require('./utils/appError');
 
@@ -13,6 +14,9 @@ if (process.env.NODE_ENV === 'development') {
 
 // PARSE BODY DATA
 app.use(express.json());
+
+// Prevent XSS attacks
+app.use(xss());
 
 //MIDDLEWARE TO TRACK REQUEST TIME
 app.use((req, res, next) => {
