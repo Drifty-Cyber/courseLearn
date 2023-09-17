@@ -50,7 +50,7 @@ module.exports = (err, req, res, next) => {
     let error = { ...err };
     error.message = err.message;
 
-    if (err.name === 11000) error = handleDuplicateFields(err);
+    if (err.code === 11000) error = handleDuplicateFields(err);
     if (err.name === 'CastError') error = handleCastErrorDB(err);
   }
 
