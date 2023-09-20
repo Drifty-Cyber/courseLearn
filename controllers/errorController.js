@@ -56,10 +56,4 @@ module.exports = (err, req, res, next) => {
 
     sendErrorProd(error, req, res);
   }
-
-  // res.status(err.statusCode).json({
-  //   status: err.status,
-  //   message: err.message,
-  //   error: err,
-  // });
 };
