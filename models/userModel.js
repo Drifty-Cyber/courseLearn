@@ -38,5 +38,12 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+// Encrypt passwords before saving user account to database
+userSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) return next();
+
+  // this.password;
+});
+
 const User = mongoose.model('User', userSchema);
 module.exports = User;
