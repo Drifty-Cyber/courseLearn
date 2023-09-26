@@ -2,6 +2,7 @@ const morgan = require('morgan');
 const express = require('express');
 const xss = require('xss-clean');
 const coursesRouter = require('./routes/courseRoutes');
+const userRouter = require('./routes/userRoutes');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 
 // MOUNT ROUTERS
 app.use('/api/v1/courses', coursesRouter);
+app.use('/api/v1/users', userRouter);
 
 // UNSPECIFIED ROUTES
 app.all('*', (req, res, next) => {
