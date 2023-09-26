@@ -8,16 +8,18 @@ const {
 } = require('../controllers/courseController');
 const courseController = require('../controllers/courseController');
 
+// Express Router
 const router = express.Router();
-
-router.route('/').post(createCourse).get(getAllCourses);
-
-router.route('/:id').get(getCourse).patch(updateCourse).delete(deleteCourse);
 
 // Get Expensive courses
 router.get('/expensive-courses', courseController.getExpensiveCourses);
 
-// Get ceap courses
+// Get cheap courses
 router.get('/cheap-courses', courseController.getCheapCourses);
+
+// Regular Routes
+router.route('/').post(createCourse).get(getAllCourses);
+
+router.route('/:id').get(getCourse).patch(updateCourse).delete(deleteCourse);
 
 module.exports = router;
