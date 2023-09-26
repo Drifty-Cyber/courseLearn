@@ -100,7 +100,7 @@ exports.deleteCourse = catchAsync(async (req, res, next) => {
 });
 
 // AGGREGATION PIPELINE FOR COURSES
-const getExpensiveCourses = catchAsync(async (req, res, next) => {
+exports.getExpensiveCourses = catchAsync(async (req, res, next) => {
   const courses = await Course.aggregate([
     {
       $match: { price: { $gte: 500 } },
@@ -115,7 +115,7 @@ const getExpensiveCourses = catchAsync(async (req, res, next) => {
   });
 });
 
-const getCheapCourses = catchAsync(async (req, res, next) => {
+exports.getCheapCourses = catchAsync(async (req, res, next) => {
   const courses = await Course.aggregate([
     {
       $match: { price: { $lte: 400 } },
