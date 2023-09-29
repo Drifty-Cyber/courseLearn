@@ -52,5 +52,28 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
+// Check if passwords are correct
+userSchema.methods.correctPassword = async function (
+  candidatePassword,
+  userpassword
+) {
+  return await bcrypt.compare(candidatePassword, userpassword);
+};
+
+//  UPDATE changePasswordAt property
+userSchema.pre('save', function (next) {
+  if (!this.isModified('password') || this.isNew) return next();
+
+  this.passwordChangedAt = Date.now() - 1000;
+
+  next();
+});
+
+// QUERY MIDDLEWARE TO HIDE INACTIVE ACCOUNTS
+userSchema.pre(/^find/, function (next) {
+  this.find({ active: { $ne: false } });
+  next();
+});
+
 const User = mongoose.model('User', userSchema);
 module.exports = User;
