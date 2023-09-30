@@ -14,6 +14,9 @@ router.route('/login').post(authController.login);
 // Logout
 router.route('/logout').get(authController.logout);
 
+// Protect Regular routes
+router.use(authController.protect);
+
 // Users Routes
 router.route('/').get(userController.getAllUsers);
 

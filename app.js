@@ -1,6 +1,7 @@
 const morgan = require('morgan');
 const express = require('express');
 const xss = require('xss-clean');
+const cookieParser = require('cookie-parser');
 const coursesRouter = require('./routes/courseRoutes');
 const userRouter = require('./routes/userRoutes');
 const AppError = require('./utils/appError');
@@ -16,6 +17,9 @@ if (process.env.NODE_ENV === 'development') {
 
 // PARSE BODY DATA
 app.use(express.json());
+
+// Parse cookies
+app.use(cookieParser());
 
 // Prevent XSS attacks
 app.use(xss());
