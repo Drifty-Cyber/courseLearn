@@ -69,6 +69,21 @@ userSchema.pre('save', function (next) {
   next();
 });
 
+// Check if user changed password after token is issued
+userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
+  if (this.passwordChangedAt) {
+    const changedTimestamp = parseInt(
+      this.passwordChangedAt.getTime() / 1000,
+      10
+    );
+    return JWTTimestamp < changedTimestamp;
+  }
+
+  //False means NOT Changed
+
+  return false;
+};
+
 // QUERY MIDDLEWARE TO HIDE INACTIVE ACCOUNTS
 userSchema.pre(/^find/, function (next) {
   this.find({ active: { $ne: false } });

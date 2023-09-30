@@ -82,7 +82,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     token = req.cookies.jwt;
   }
 
-  console.log(token);
+  // console.log(token);
 
   if (!token) {
     return next(
@@ -93,12 +93,31 @@ exports.protect = catchAsync(async (req, res, next) => {
   // Verify Token
   const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-  console.log(decoded);
+  // console.log(decoded);
 
   // Get user based on decoded ID
   const currentUser = await User.findById(decoded.id);
-  console.log(currentUser);
+  // console.log(currentUser);
 
+  if (!currentUser) {
+    return next(
+      new AppError('The user belonging to this token does not exist', 401)
+    );
+  }
+
+  // Check if user has changed password after JWT was issued
+  if (currentUser.changedPasswordAfter(decoded.iat)) {
+    return new AppError(
+      'User recently changed password! Please log in again',
+      401
+    );
+  }
+
+  // If all checks complete with no errors, place user on request object
+  req.user = currentUser;
+  // console.log(req);
+
+  // Grant access by moving to next middleware
   next();
 });
 
