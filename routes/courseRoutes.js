@@ -7,6 +7,7 @@ const {
   deleteCourse,
 } = require('../controllers/courseController');
 const courseController = require('../controllers/courseController');
+const authController = require('../controllers/authController');
 
 // Express Router
 const router = express.Router();
@@ -18,7 +19,7 @@ router.get('/expensive-courses', courseController.getExpensiveCourses);
 router.get('/cheap-courses', courseController.getCheapCourses);
 
 // Regular Routes
-router.route('/').post(createCourse).get(getAllCourses);
+router.route('/').post(createCourse).get(authController.protect, getAllCourses);
 
 router.route('/:id').get(getCourse).patch(updateCourse).delete(deleteCourse);
 

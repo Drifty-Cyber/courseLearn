@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const { promisify } = require('util');
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
@@ -48,23 +49,68 @@ exports.signup = catchAsync(async (req, res, _next) => {
 });
 
 // Login
-// exports.login = catchAsync(async (req, res, next) => {
-//   const { email, password } = req.body;
+exports.login = catchAsync(async (req, res, next) => {
+  const { email, password } = req.body;
 
-//   // Check if user provides email and password
-//   if (!email || !password) {
-//     return next(new AppError('Please provide an Email and Password', 400));
-//   }
+  // Check if user provides email and password
+  if (!email || !password) {
+    return next(new AppError('Please provide an Email and Password', 400));
+  }
 
-//   // Check if user exists and password is vaid
-//   const user = await User.findOne({ email }).select('+password');
+  // Check if user exists and password is vaid
+  const user = await User.findOne({ email }).select('+password');
 
-//   if (!user || !(await user.correctPassword(password, user.password))) {
-//     return next(new AppError('Incorrect Email or Password', 401));
-//   }
+  if (!user || !(await user.correctPassword(password, user.password))) {
+    return next(new AppError('Incorrect Email or Password', 401));
+  }
 
-//   // Send Token
-//   createSendToken(user, 200, req, res);
+  // Send Token
+  createSendToken(user, 200, req, res);
+});
 
-//   //
-// });
+// Protect
+exports.protect = catchAsync(async (req, res, next) => {
+  let token;
+
+  // Check if token is present
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith('Bearer')
+  ) {
+    token = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
+  }
+
+  console.log(token);
+
+  if (!token) {
+    return next(
+      new AppError('You are not logged in! Please log in to get access', 401)
+    );
+  }
+
+  // Verify Token
+  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+  console.log(decoded);
+
+  // Get user based on decoded ID
+  const currentUser = await User.findById(decoded.id);
+  console.log(currentUser);
+
+  next();
+});
+
+// Logout
+exports.logout = (req, res, next) => {
+  res.cookie('jwt', 'loggedout', {
+    expires: new Date(Date.now() + 50 * 1000),
+    httpOnly: true,
+  });
+
+  res.status(200).json({
+    status: 'success',
+    message: 'Logged out successfully',
+  });
+};
