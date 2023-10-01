@@ -17,7 +17,7 @@ router.route('/logout').get(authController.logout);
 // Protect Regular routes
 router.use(authController.protect);
 
-// User Routes
+// Regular User Routes
 router.route('/').get(userController.getAllUsers);
 
 router.route('/:id').get(userController.getUser);
