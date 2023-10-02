@@ -19,8 +19,13 @@ router.get('/expensive-courses', courseController.getExpensiveCourses);
 router.get('/cheap-courses', courseController.getCheapCourses);
 
 // Regular Routes
-router.route('/').post(createCourse).get(authController.protect, getAllCourses);
+router.route('/').post(authController.protect, createCourse).get(getAllCourses);
 
-router.route('/:id').get(getCourse).patch(updateCourse).delete(deleteCourse);
+router
+  .route('/:id')
+  .get(getCourse)
+  .patch(authController.protect, updateCourse)
+  .delete(authController.protect, deleteCourse);
 
+// Export Router
 module.exports = router;

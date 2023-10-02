@@ -17,9 +17,13 @@ router.route('/logout').get(authController.logout);
 // Protect Regular routes
 router.use(authController.protect);
 
+// Get user profile (Logged in users)
+router.route('/profile').get(authController.profile);
+
 // Regular User Routes
 router.route('/').get(userController.getAllUsers);
 
 router.route('/:id').get(userController.getUser);
 
+// Export Router
 module.exports = router;
