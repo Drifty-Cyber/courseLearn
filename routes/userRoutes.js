@@ -14,6 +14,9 @@ router.route('/login').post(authController.login);
 // Logout
 router.route('/logout').get(authController.logout);
 
+// Forgot Password
+router.route('/forgotPassword').post(authController.forgotPassword);
+
 // Protect Regular routes
 router.use(authController.protect);
 

@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const validator = require('validator');
@@ -32,6 +33,9 @@ const userSchema = new mongoose.Schema({
     enum: ['user', 'student', 'instructor', 'admin'],
     default: 'student',
   },
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passwordResetExpires: Date,
   active: {
     type: Boolean,
     default: true,
@@ -82,6 +86,21 @@ userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   //False means NOT Changed
 
   return false;
+};
+
+// User Method to Generate Reset Token
+userSchema.methods.createPasswordResetToken = function () {
+  const resetToken = crypto.randomBytes(32).toString('hex');
+
+  this.passwordResetToken = crypto
+    .createHash('sha256')
+    .update(resetToken)
+    .digest('hex');
+
+  this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
+  console.log({ resetToken }, this.passwordResetToken);
+
+  return resetToken;
 };
 
 // QUERY MIDDLEWARE TO HIDE INACTIVE ACCOUNTS

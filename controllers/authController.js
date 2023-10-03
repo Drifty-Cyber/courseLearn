@@ -185,3 +185,20 @@ exports.profile = catchAsync(async (req, res, next) => {
     },
   });
 });
+
+exports.forgotPassword = catchAsync(async (req, res, next) => {
+  // Get email from request body
+  const { email } = req.body;
+
+  // Get user with email
+  const user = await User.findOne({ email });
+
+  // Guard clause
+  if (!user) {
+    return next(new AppError('There is no user with this email address.', 404));
+  }
+
+  // Generate random reset token
+  const resetToken = user.createPasswordResetToken();
+  await user.save({ validateBeforeSave: false });
+});
