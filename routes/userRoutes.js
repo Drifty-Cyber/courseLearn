@@ -23,6 +23,9 @@ router.use(authController.protect);
 // Get user profile (Logged in users)
 router.route('/profile').get(authController.profile);
 
+// Restrict to admin
+router.use(authController.restrictTo('admin'));
+
 // Regular User Routes
 router.route('/').get(userController.getAllUsers);
 
