@@ -41,6 +41,14 @@ const userSchema = new mongoose.Schema({
     default: true,
     select: false,
   },
+  createdAt: Date,
+});
+
+// Track Account Creation Time
+userSchema.pre('save', function (next) {
+  this.createdAt = Date.now();
+
+  next();
 });
 
 // Encrypt passwords before saving user account to database
