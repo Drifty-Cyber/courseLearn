@@ -17,6 +17,9 @@ router.route('/logout').get(authController.logout);
 // Forgot Password
 router.route('/forgotPassword').post(authController.forgotPassword);
 
+// Reset Password
+router.route('/resetPassword').patch(authController.resetPassword);
+
 // Protect Regular routes
 router.use(authController.protect);
 
