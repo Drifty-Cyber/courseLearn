@@ -32,7 +32,7 @@ const courseSchema = new mongoose.Schema({
   ratingsQuantity: Number,
   enrolledStudents: Number,
   courseDuration: String,
-  courseLength: [Number],
+  courseLength: [String],
   assignments: [
     {
       type: mongoose.Schema.ObjectId,

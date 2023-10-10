@@ -1,7 +1,7 @@
 [
   {
     "courseId": "CSCI101",
-    "courseTitle": "Introduction to Computer Science",
+    "title": "Introduction to Computer Science",
     "courseDescription": "This course provides a foundation in the fundamentals of computer science, including programming, data structures, and algorithms.",
     "leadInstructor": "Dr. Jane Doe",
     "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
@@ -113,7 +113,7 @@
   },
   {
     "courseId": "CSCI102",
-    "courseTitle": "Introduction to Data Analysis",
+    "title": "Introduction to Data Analysis",
     "courseDescription": "This course provides a foundation in the fundamentals of Data Analysis, including Excel, PowerBi, and SPSS.",
     "leadInstructor": "Dr. Jane Doe",
     "instructors": ["5c8a22c62f8fb814b56fa18b", "5c8a22c62f8fb814b56fa18b"],
@@ -229,7 +229,7 @@
   },
   {
     "courseId": "WEBDEV202",
-    "courseTitle": "Web Development Fundamentals",
+    "title": "Web Development Fundamentals",
     "courseDescription": "Learn the basics of building interactive websites using HTML, CSS, and JavaScript.",
     "leadInstructor": "Dr. Mark Johnson",
     "instructors": ["5c8a22c62f8fb814b56fa18b"],
@@ -327,7 +327,7 @@
   },
   {
     "courseId": "DATASCI301",
-    "courseTitle": "Introduction to Data Science",
+    "title": "Introduction to Data Science",
     "courseDescription": "Discover the foundations of data science, including data analysis, visualization, and machine learning.",
     "leadInstructor": "Prof. Lisa Anderson",
     "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
@@ -425,7 +425,7 @@
   },
   {
     "courseId": "COMPILER401",
-    "courseTitle": "Compiler Construction and Theory",
+    "title": "Compiler Construction and Theory",
     "courseDescription": "Delve into the intricacies of compiler design, parsing techniques, and programming languages.",
     "leadInstructor": "Prof. David Thompson",
     "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
@@ -527,7 +527,7 @@
   },
   {
     "courseId": "DATACOMM301",
-    "courseTitle": "Data Communication and Networking",
+    "title": "Data Communication and Networking",
     "courseDescription": "Explore the principles of data communication and networking, including protocols, transmission, and network architectures.",
     "leadInstructor": "Dr. Michael Roberts",
     "instructors": ["5d6b9e73a4cf3a2f87c18a9e", "5e7f1b9cf9a2b6d92e45231a"],
@@ -625,7 +625,7 @@
   },
   {
     "courseId": "ML202",
-    "courseTitle": "Machine Learning Fundamentals",
+    "title": "Machine Learning Fundamentals",
     "courseDescription": "Explore the core concepts of machine learning, including algorithms, model training, and evaluation.",
     "leadInstructor": "Dr. Sarah Johnson",
     "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
@@ -723,7 +723,7 @@
   },
   {
     "courseId": "PYT101",
-    "courseTitle": "Python Programming Basics",
+    "title": "Python Programming Basics",
     "courseDescription": "Learn the fundamentals of Python programming, covering syntax, data types, and basic algorithms.",
     "leadInstructor": "Prof. John Smith",
     "instructors": ["5d6b9e73a4cf3a2f87c18a9e"],
@@ -821,7 +821,7 @@
   },
   {
     "courseId": "JSWEB202",
-    "courseTitle": "JavaScript Web Development",
+    "title": "JavaScript Web Development",
     "courseDescription": "Learn how to build interactive and dynamic websites using JavaScript, HTML, and CSS.",
     "leadInstructor": "Prof. Emily Williams",
     "instructors": ["5e7f1b9cf9a2b6d92e45231a"],
@@ -919,7 +919,7 @@
   },
   {
     "courseId": "PCUPGRADE101",
-    "courseTitle": "PC Upgrading and Hardware Essentials",
+    "title": "PC Upgrading and Hardware Essentials",
     "courseDescription": "Gain practical knowledge on upgrading and maintaining computer hardware components.",
     "leadInstructor": "Dr. Mark Anderson",
     "instructors": ["5c8a22c62f8fb814b56fa18b"],
