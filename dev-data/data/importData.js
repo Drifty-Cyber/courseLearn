@@ -22,15 +22,24 @@ mongoose
   })
   .then(() => console.log('DB connection successful'));
 
-// READ FILE
+// READ FILE - Courses Data
 const courses = JSON.parse(
   fs.readFileSync(`${__dirname}/courses.json`, 'utf-8')
+);
+
+// Read File - Users Data
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
+
+// Read File - Reviews Data
+const reviews = JSON.parse(
+  fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8')
 );
 
 // IMPORT THE DATA
 const importData = async () => {
   try {
     await Course.create(courses);
+    await User.create(users);
     console.log('Data successfully loaded');
   } catch (err) {
     console.log(err);
