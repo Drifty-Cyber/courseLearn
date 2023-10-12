@@ -21,6 +21,7 @@ router.get('/cheap-courses', courseController.getCheapCourses);
 // Regular Routes
 router.route('/').post(authController.protect, createCourse).get(getAllCourses);
 
+// Regular routes that require an id
 router
   .route('/:id')
   .get(getCourse)

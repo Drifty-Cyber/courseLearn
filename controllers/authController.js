@@ -177,7 +177,7 @@ exports.profile = catchAsync(async (req, res, next) => {
   // Verify token
   const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-  //
+  // Find user by ID from JWT
   const currentUser = await User.findById(decoded.id);
 
   res.status(200).json({

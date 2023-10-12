@@ -3,7 +3,7 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 // Utility Function
-const sendResponse = (statusCode, data, req, res) => {
+const sendResponse = (statusCode, data, req: number, res) => {
   res.status(statusCode).json({
     status: 'success',
     data: {
@@ -40,4 +40,10 @@ exports.getUser = catchAsync(async (req, res, next) => {
   //     },
   //   });
   sendResponse(200, user, req, res);
+});
+
+// Update user
+exports.updateUser = catchAsync(async (req, res, next) => {
+  // Get user by ID
+  const user = await User.findById(req.params.id);
 });

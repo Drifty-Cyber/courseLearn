@@ -49,6 +49,7 @@ const userSchema = new mongoose.Schema({
     select: false,
   },
   createdAt: Date,
+  joined: Date.now(),
 });
 
 // Track Account Creation Time
