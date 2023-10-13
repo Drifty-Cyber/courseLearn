@@ -3,7 +3,7 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 // Utility Function
-const sendResponse = (statusCode, data, req: number, res) => {
+const sendResponse = (statusCode, data, req, res) => {
   res.status(statusCode).json({
     status: 'success',
     data: {
@@ -44,6 +44,23 @@ exports.getUser = catchAsync(async (req, res, next) => {
 
 // Update user
 exports.updateUser = catchAsync(async (req, res, next) => {
-  // Get user by ID
-  const user = await User.findById(req.params.id);
+  // Get user by ID and Update
+  const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+    runValidators: true,
+    new: true,
+  });
+
+  if (!user) {
+    return next(new AppError('No user found with that ID', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      user,
+    },
+  });
 });
+
+// Delete User
+exports.deleteUser = catchAsync(async (req, res, next) => {});
