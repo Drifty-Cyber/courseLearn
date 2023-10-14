@@ -27,6 +27,14 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
   sendResponse(200, users, req, res);
 });
 
+// Create User
+exports.createUser = catchAsync(async (req, res, next) => {
+  res.status(403).json({
+    status: 'error',
+    message: 'This route is not available to create users. Use /signup instead',
+  });
+});
+
 // Get user by ID
 exports.getUser = catchAsync(async (req, res, next) => {
   // Query
@@ -63,4 +71,15 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 });
 
 // Delete User
-exports.deleteUser = catchAsync(async (req, res, next) => {});
+exports.deleteUser = catchAsync(async (req, res, next) => {
+  const user = await User.findByIdAndDelete(req.params.id);
+
+  if (!user) {
+    return next(new AppError('No user found wit that ID', 404));
+  }
+
+  res.status(204).json({
+    status: 'success',
+    data: null,
+  });
+});

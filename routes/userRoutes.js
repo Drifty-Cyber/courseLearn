@@ -30,9 +30,16 @@ router.route('/profile').get(authController.profile);
 router.use(authController.restrictTo('admin'));
 
 // Regular User Routes
-router.route('/').get(userController.getAllUsers);
+router
+  .route('/')
+  .get(userController.getAllUsers)
+  .post(userController.createUser);
 
-router.route('/:id').get(userController.getUser);
+router
+  .route('/:id')
+  .get(userController.getUser)
+  .patch(userController.updateUser)
+  .delete(userController.deleteUser);
 
 // Export Router
 module.exports = router;
