@@ -27,7 +27,7 @@ router.use(authController.protect);
 router.route('/profile').get(authController.profile);
 
 // Restrict to admin
-router.use(authController.restrictTo('admin'));
+router.use(authController.restrictTo('admin', 'admin-instructor'));
 
 // Regular User Routes
 router
